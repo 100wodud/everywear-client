@@ -17,4 +17,12 @@
 
 # Tech Stack
 
-![stack](![image](https://user-images.githubusercontent.com/68820161/118127200-5ad2de00-b434-11eb-940b-368406b93bb3.png))
+![image](https://user-images.githubusercontent.com/68820161/118127481-b9985780-b434-11eb-93d2-84627f2f4902.png)
+
+## Front-end
+• Javascript, React-native, CSS3, HTML5, axsios
+## Back-end
+• Typescript, Express, Jest, MySQL
+## Deployment
+• Amazon EC2,Amazon S3
+***
