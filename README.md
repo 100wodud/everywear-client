@@ -1,1 +1,1 @@
-# everywere-client
+# everywear-client
