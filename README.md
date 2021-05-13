@@ -15,4 +15,6 @@
 
 ***
 
+# Tech Stack
 
+![stack](![image](https://user-images.githubusercontent.com/68820161/118127200-5ad2de00-b434-11eb-940b-368406b93bb3.png))
