@@ -26,5 +26,5 @@
 • Typescript, Express, Jest, MySQL, Github Actions, Amazon Lambda, AWS CodeDeploy,   
 &nbsp;&nbsp;AWS CodePipeline, AWS CodeCommit, Amazon CloudWatch, AWS CodeBuild, AWS Elastic beanstalk
 ## Deployment
-• Amazon EC2,Amazon S3
+• Amazon EC2, Amazon S3
 ***
