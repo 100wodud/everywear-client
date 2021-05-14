@@ -139,7 +139,7 @@ class Home extends Component {
                             </View> :
                             <View style={{ alignItems: 'center' }}>
                                 <View>
-                                    { this.state.userdata.map((v) => {
+                                    { this.state.userdata.reverse().map((v) => {
                                         return (
                                         <View key={v.evaluationId}>
                                             <TouchableOpacity onPress={() => { navigation.navigate("평가",{

@@ -18,7 +18,7 @@ import {
 import { WithLocalSvg } from "react-native-svg";
 import apple from '../../fakedata/apple.svg';
 import profile from '../../fakedata/profile.svg';
-
+import AsyncStorage from '@react-native-community/async-storage'
 import axios from "axios";
 
 const MyPage = ({ navigation, info }) => {
@@ -45,6 +45,17 @@ const MyPage = ({ navigation, info }) => {
     });
     return unsubscribe;
   }, [navigation]);
+
+  const logOut = async () => {
+    try {
+      await AsyncStorage.removeItem('userData');
+      console.log('Data removed')
+    }
+    catch (exception) {
+      console.log(exception)
+    }
+    navigation.navigate("login");
+  }
 
   const styles = StyleSheet.create({
     container: {
@@ -337,9 +348,7 @@ const MyPage = ({ navigation, info }) => {
 
         {/*로그아웃 버튼*/}
         <View style={{ alignItems: "center" }}>
-          <TouchableOpacity style={styles.button} onPress={() => {
-            navigation.navigate("login");
-          }}>
+          <TouchableOpacity style={styles.button} onPress={() => logOut()}>
             <>
               <Text
                 style={styles.buttonText}

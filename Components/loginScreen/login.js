@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   TextInput,
   StyleSheet,
@@ -12,11 +12,25 @@ import {
   heightPercentageToDP as hp,
 } from "react-native-responsive-screen";
 import axios from "axios";
+import AsyncStorage from '@react-native-community/async-storage'
+
 const Login = (props) => {
   const { navigation } = props;
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMssage, setErrorMessage] = useState(" ");
+  
+  useEffect( () => {
+    AsyncStorage.getItem('userData', (err, result) => {
+      console.log(result)
+      const UserInfo = JSON.parse(result);
+      if(UserInfo){
+        setPassword(UserInfo.password)
+        setUserEmail(UserInfo.mail)
+      } 
+    })
+  }, [navigation]);
+
   const handleClick = () => {
     if (userEmail === "") {
       setErrorMessage("이메일를 입력해주세요");
@@ -42,8 +56,16 @@ const Login = (props) => {
             axios.defaults.headers.common[
               "Authorization"
             ] = `Bearer ${accessToken}`;
-            console.log(accessToken)
+            AsyncStorage.setItem(
+              'userData',
+              JSON.stringify({
+                mail: userEmail,
+                password: password,
+              })
+            );
             navigation.navigate('홈')
+            axios.put("http://everyweardev-env.eba-azpdvh2m.ap-northeast-2.elasticbeanstalk.com/api/v1/user/count")
+            .then(response => {console.log(response.data)})
           })
           .catch((err) => setErrorMessage('이메일 / 비밀번호를 확인해주세요'));
 
