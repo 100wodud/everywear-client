@@ -21,7 +21,7 @@
 
 
 ## Front-end
-• Typescript, React, React-native, Javascript, HTML5, CSS3, gradle, axsios, firebase
+• Typescript, React, React-native, Javascript, HTML5, CSS3, axsios, firebase, gradle
 ## Back-end
 • Typescript, Express, Jest, MySQL, Github Actions, Amazon Lambda, AWS CodeDeploy,   
 &nbsp;&nbsp;AWS CodePipeline, AWS CodeCommit, Amazon CloudWatch, AWS CodeBuild, AWS Elastic beanstalk
