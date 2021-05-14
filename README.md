@@ -17,13 +17,14 @@
 
 # Tech Stack
 
-![image](https://user-images.githubusercontent.com/68820161/118222186-1722b780-b4ba-11eb-95ee-971df506e1cc.png)
+![image](https://user-images.githubusercontent.com/68820161/118223615-aaf58300-b4bc-11eb-9306-86a8de9dea7f.png)
 
 
 ## Front-end
-• Javascript, React-native, CSS3, HTML5, axsios
+• React, Typescript, React-native, Javascript, HTML, 5CSS3, gradle, axsios, firebase
 ## Back-end
-• Typescript, Express, Jest, MySQL
+• Typescript, Express, Jest, MySQL, Github Actions, Amazon Lambda, AWS CodeDeploy,   
+&nbsp;&nbsp;AWS CodePipeline, AWS CodeCommit, Amazon CloudWatch, AWS CodeBuild, AWS Elastic beanstalk
 ## Deployment
 • Amazon EC2,Amazon S3
 ***
