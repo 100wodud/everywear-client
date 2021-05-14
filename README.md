@@ -17,7 +17,8 @@
 
 # Tech Stack
 
-![image](https://user-images.githubusercontent.com/68820161/118127481-b9985780-b434-11eb-93d2-84627f2f4902.png)
+![image](https://user-images.githubusercontent.com/68820161/118222186-1722b780-b4ba-11eb-95ee-971df506e1cc.png)
+
 
 ## Front-end
 • Javascript, React-native, CSS3, HTML5, axsios
