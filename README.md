@@ -6,8 +6,8 @@
 • __Member__
 |***PM***|***Backend***|***Frontend***|
 |:---------:|:-----:|:------:|
-|손지희, 전태호|한승하|박재영, 정병주|
-|-|[@tosky1125](https://github.com/tosky1125)|[@1000wodud](https://github.com/100wodud),[@byungju0624](https://github.com/byungju0624)|
+|손지희, 전태호|한승하|백재영, 정병주|
+|-|[@tosky1125](https://github.com/tosky1125)|[@100wodud](https://github.com/100wodud),[@byungju0624](https://github.com/byungju0624)|
 
 # 프로젝트 설명
 
